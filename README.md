@@ -1,6 +1,8 @@
 # Read and Extract User's Access Information
 
 Laravel application to read and extract information from users and their access history.
+This application implements a Vue.js pagination component for Laravel paginators that works with Bootstrap.
+
 
 ## Getting Started
 
@@ -11,9 +13,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 To get started, make sure you have [Docker](https://docs.docker.com/) installed on your system. 
 
+
 ### Installing
 
-- First, clone this repository and add your entire Laravel project to the 'src' folder. 
+- First, clone this repository to your desired local folder. 
 Then open a terminal, run:
 ```
 cd NOMEDASUAPASTA && cp .env.example .env && sudo chmod 777 -R
