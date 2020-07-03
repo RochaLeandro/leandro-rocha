@@ -19,7 +19,7 @@ To get started, make sure you have [Docker](https://docs.docker.com/) installed 
 - First, clone this repository to your desired local folder. 
 Then open a terminal, run:
 ```
-cd YOURFOLDER && cp .env.example .env && sudo chmod 777 -R
+cd YOURFOLDER && cp ./application/.env.example ./application/.env && sudo chmod 777 -R .
 ```
 
 - With Docker installed, from your cloned respository's root, run:
