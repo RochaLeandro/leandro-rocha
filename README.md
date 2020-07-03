@@ -1,3 +1,65 @@
+# Read and Extract User's Access Information
+
+Laravel application to read and extract information from users and their access history.
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+
+To get started, make sure you have [Docker]() installed on your system, and then clone this repository.
+
+### Prerequisites
+
+XAMPP 7.4.7 or another PHP development environment
+PHP 7.4.7
+
+```
+Give examples
+```
+
+### Installing
+
+- First add your entire Laravel project to the 'src' folder. 
+Then open a terminal, run:
+```
+cd NOMEDASUAPASTA && cp .env.example .env && sudo chmod 777 -R
+```
+
+- With Docker installed, from this cloned respository's root run:
+```
+docker-compose up -d
+```
+
+- Once the Docker Container is up, run the following command to access the container:
+```
+docker exec -it lrdstest-php-fpm bash
+```
+
+- Insider the container, run the following command to install all PHP dependencies
+```
+composer install && php artisan key:generate && php artisan config:cache
+```
+
+- For seeding your database with a random test data of 'users' and 'userAccesses', run:
+```
+php artisan migrate:fresh --seed
+```
+
+- Finally, install all Javascript dependencies needed for the project: 
+```
+npm install && npm run dev
+```
+
+- All set! Open up your browser of choice to http://localhost:8890 and you should see your Laravel app running as intended. Your Laravel app needs to be in the src directory first before bringing the containers up, otherwise the artisan container will not build, as it's missing the appropriate file.
+
+
+
+## Authors
+
+* **Leandro Pohlmann Rocha**
+
+
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
@@ -76,3 +138,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
