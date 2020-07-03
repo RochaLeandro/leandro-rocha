@@ -6,26 +6,20 @@ Laravel application to read and extract information from users and their access 
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
-To get started, make sure you have [Docker]() installed on your system, and then clone this repository.
 
 ### Prerequisites
 
-XAMPP 7.4.7 or another PHP development environment
-PHP 7.4.7
-
-```
-Give examples
-```
+To get started, make sure you have [Docker](https://docs.docker.com/) installed on your system. 
 
 ### Installing
 
-- First add your entire Laravel project to the 'src' folder. 
+- First, clone this repository and add your entire Laravel project to the 'src' folder. 
 Then open a terminal, run:
 ```
 cd NOMEDASUAPASTA && cp .env.example .env && sudo chmod 777 -R
 ```
 
-- With Docker installed, from this cloned respository's root run:
+- With Docker installed, from your cloned respository's root, run:
 ```
 docker-compose up -d
 ```
@@ -35,7 +29,7 @@ docker-compose up -d
 docker exec -it lrdstest-php-fpm bash
 ```
 
-- Insider the container, run the following command to install all PHP dependencies
+- Inside the container, run the following command to install all PHP dependencies:
 ```
 composer install && php artisan key:generate && php artisan config:cache
 ```
