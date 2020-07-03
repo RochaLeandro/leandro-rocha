@@ -19,7 +19,7 @@ To get started, make sure you have [Docker](https://docs.docker.com/) installed 
 - First, clone this repository to your desired local folder. 
 Then open a terminal, run:
 ```
-cd NOMEDASUAPASTA && cp .env.example .env && sudo chmod 777 -R
+cd YOURFOLDER && cp .env.example .env && sudo chmod 777 -R
 ```
 
 - With Docker installed, from your cloned respository's root, run:
@@ -47,7 +47,7 @@ php artisan migrate:fresh --seed
 npm install && npm run dev
 ```
 
-- All set! Open up your browser of choice to http://localhost:8890 and you should see your Laravel app running as intended. Your Laravel app needs to be in the src directory first before bringing the containers up, otherwise the artisan container will not build, as it's missing the appropriate file.
+- All set! Open up your browser of choice to http://localhost:8890 and you should see your Laravel app running as intended.
 
 
 
